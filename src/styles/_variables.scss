@@ -1,0 +1,37 @@
+// src/styles/_variables.scss
+
+// Colors from Figma
+$accent-gold: #f4c73f;
+$accent-gold-light: #f9e68e;
+$white: #ffffff;
+$text-dark: #444444;
+$text-muted: #a6a6a6;
+$text-light: #ededed;
+$nav-bg-overlay: rgba(0, 0, 0, 0.2);
+$hero-overlay-gradient: linear-gradient(180deg, rgba(7, 21, 26, 0.55) 0%, rgba(7, 21, 26, 0.8) 75%);
+$yellow-gradient: linear-gradient(90deg, #efc371 -0.02%, #c59a49 78.25%);
+$yellow-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+// Fonts
+$font-cormorant: 'Cormorant Garamond', Georgia, serif;
+$font-lora: 'Lora', Georgia, serif;
+
+// Spacing
+$nav-padding: 16px 24px;
+$nav-gap: 24px;
+$nav-border-radius: 72px;
+$button-border-radius: 24px;
+$logo-width: 125.83px;
+$logo-height: 40px;
+
+// Typography
+$nav-link-size: 16px;
+$button-text-size: 16px;
+$description-size: 18px;
+$nav-link-height: 24px;
+$button-height: 24px;
+$description-line-height: 26px;
+
+// Radius
+$radius: 12px;
+

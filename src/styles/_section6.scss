@@ -1,0 +1,218 @@
+// src/styles/_section6.scss
+@import 'variables';
+
+.section6-faq {
+  background: #07151a;
+  color: $white;
+  position: relative;
+  padding: 5.5rem 0;
+  overflow: hidden;
+
+  .faq-decor {
+    position: absolute;
+    opacity: 0.12;
+    width: 350px;
+    height: auto;
+    pointer-events: none;
+  }
+
+  .faq-decor-left {
+    left: 40px;
+    top: 20px;
+    transform: rotate(-5deg);
+  }
+
+  .faq-decor-right {
+    right: 40px;
+    top: 30px;
+    transform: rotate(5deg);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .faq-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+
+    .faq-title {
+      font-family: $font-cormorant;
+      font-size: 3.2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: $white;
+      margin: 0 0 0.75rem 0;
+      line-height: 1.1;
+    }
+
+    .faq-subtitle {
+      font-family: $font-lora;
+      font-size: 1rem;
+      color: rgba($white, 0.72);
+      margin: 0;
+      line-height: 1.6;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  .faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .faq-item {
+      border-bottom: 1px solid rgba($white, 0.04);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .faq-btn {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: left;
+
+        &:hover .faq-question {
+          color: rgba($white, 0.98);
+        }
+
+        .faq-left {
+          flex: 1;
+
+          .faq-question {
+            font-family: $font-cormorant;
+            font-size: 1.35rem;
+            font-weight: 400;
+            color: $white;
+            margin: 0 0 0.75rem 0;
+            line-height: 1.4;
+            letter-spacing: 0.3px;
+            transition: color 0.3s ease;
+          }
+
+          .faq-answer {
+            font-family: $font-lora;
+            font-size: 0.95rem;
+            color: rgba($white, 0.65);
+            margin: 0;
+            line-height: 1.7;
+            letter-spacing: 0.2px;
+          }
+        }
+
+        .faq-toggle {
+          flex-shrink: 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          border: 1px solid rgba($white, 0.08);
+          background: transparent;
+          color: $white;
+          font-size: 1.5rem;
+          font-family: $font-lora;
+          font-weight: 300;
+          margin-top: 2px;
+          transition: all 0.3s ease;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .section6-faq {
+    padding: 4rem 0;
+
+    .faq-decor {
+      width: 250px;
+      opacity: 0.08;
+    }
+
+    .faq-decor-left {
+      left: 20px;
+      top: 40px;
+    }
+
+    .faq-decor-right {
+      right: 20px;
+    }
+
+    .faq-header {
+      margin-bottom: 2.5rem;
+
+      .faq-title {
+        font-size: 2.5rem;
+      }
+    }
+
+    .faq-list .faq-item .faq-btn {
+      padding: 1.5rem 0;
+      gap: 1.5rem;
+
+      .faq-left .faq-question {
+        font-size: 1.2rem;
+      }
+
+      .faq-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1.35rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section6-faq {
+    padding: 3rem 0;
+
+    .faq-decor {
+      display: none;
+    }
+
+    .faq-header {
+      margin-bottom: 2rem;
+
+      .faq-title {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+      }
+
+      .faq-subtitle {
+        font-size: 0.95rem;
+      }
+    }
+
+    .faq-list .faq-item .faq-btn {
+      padding: 1.25rem 0;
+      gap: 1rem;
+      align-items: center;
+
+      .faq-left .faq-question {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .faq-toggle {
+        width: 38px;
+        height: 38px;
+        font-size: 1.2rem;
+        margin-top: 0;
+      }
+    }
+  }
+}

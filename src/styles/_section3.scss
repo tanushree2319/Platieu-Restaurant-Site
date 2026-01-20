@@ -1,0 +1,257 @@
+// src/styles/_section3.scss
+@import 'variables';
+
+.chefs-favorites-section {
+  background: $white;
+  padding: 5rem 0;
+  min-height: auto;
+
+  .chefs-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .decor-left,
+  .decor-right {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+  }
+
+  .header-content {
+    text-align: center;
+    flex: 0 0 auto;
+  }
+
+  .chefs-title {
+    font-family: $font-cormorant;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .chefs-subtitle {
+    font-family: $font-lora;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .menu-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+
+    .menu-item-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .menu-item-info {
+      flex: 1;
+    }
+  }
+
+  .menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .menu-item-name {
+    font-family: $font-cormorant;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #222;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .menu-item-price {
+    font-family: $font-lora;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+    white-space: nowrap;
+  }
+
+  .menu-item-category {
+    font-family: $font-lora;
+    font-size: 12px;
+    font-weight: 500;
+    color: #999;
+    margin: 0 0 0.5rem 0;
+    text-transform: capitalize;
+  }
+
+  .menu-item-description {
+    font-family: $font-lora;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .chefs-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-explore {
+    background: $accent-gold;
+    color: $text-dark;
+    font-family: $font-lora;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: darken($accent-gold, 5%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .chefs-favorites-section {
+    padding: 3rem 0;
+
+    .decor-left,
+    .decor-right {
+      width: 100px;
+    }
+
+    .chefs-title {
+      font-size: 2.5rem;
+    }
+
+    .menu-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .menu-item {
+      gap: 1rem;
+
+      .menu-item-image {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .chefs-favorites-section {
+    padding: 2rem 0;
+
+    .chefs-header {
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .decor-left,
+    .decor-right {
+      width: 80px;
+    }
+
+    .chefs-title {
+      font-size: 2rem;
+    }
+
+    .chefs-subtitle {
+      font-size: 14px;
+    }
+
+    .menu-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      gap: 1rem;
+
+      .menu-item-image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .menu-item-name {
+      font-size: 1.2rem;
+    }
+
+    .menu-item-description {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .chefs-favorites-section {
+    .chefs-header {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .decor-left,
+    .decor-right {
+      display: none;
+    }
+
+    .chefs-title {
+      font-size: 1.5rem;
+    }
+
+    .menu-item {
+      flex-direction: column;
+      text-align: center;
+
+      .menu-item-image {
+        width: 100%;
+        max-width: 150px;
+        height: 150px;
+        margin: 0 auto;
+      }
+
+      .menu-item-header {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}

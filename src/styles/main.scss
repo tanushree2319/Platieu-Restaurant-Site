@@ -1,0 +1,33 @@
+// src/styles/main.scss
+@import 'variables';
+@import 'navbar';
+@import 'hero';
+@import 'company';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+@import 'section6';
+@import 'section7';
+@import 'footer';
+@import 'menu';
+@import 'location';
+@import 'locationsection2';
+@import 'locationsection3';
+@import 'news';
+@import 'newsdetails';
+@import 'ourstory';
+@import 'reserve';
+@import 'privacy';
+@import 'thankyou';
+
+/* small global resets / overrides */
+body {
+  font-family: $font-lora, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #fff;
+  color: #222;
+}
+
+/* make navbar text light on hero */
+.navbar-dark .navbar-nav .nav-link { color: rgba(255,255,255,0.9); }
+
+

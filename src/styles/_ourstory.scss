@@ -1,0 +1,367 @@
+@import 'variables';
+
+.ourstory-hero-section {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  overflow: hidden;
+}
+
+.ourstory-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  transform: scale(1.02);
+  z-index: 0;
+}
+
+.ourstory-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7,21,26,0.55) 0%, rgba(7,21,26,0.65) 100%);
+  z-index: 1;
+}
+
+.ourstory-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1100px;
+  padding: 6rem 1.25rem;
+}
+
+.ourstory-ornament {
+  display: block;
+  width: 140px;
+  height: 56px;
+  margin: 0 auto 20px auto;
+  background-image: url('../assets/Home/YellowDesign.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.ourstory-hero-title {
+  font-family: $font-cormorant, Georgia, 'Times New Roman', serif;
+  font-size: 56px;
+  line-height: 1.03;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px 0;
+  color: $white;
+}
+
+.ourstory-hero-sub {
+  font-family: $font-lora, serif;
+  color: rgba(255,255,255,0.9);
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+}
+
+@media (min-width: 1400px) {
+  .ourstory-hero-section { min-height: 80vh; }
+  .ourstory-hero-title { font-size: 72px; }
+}
+
+@media (max-width: 991px) {
+  .ourstory-hero-content { padding: 4rem 1rem; }
+  .ourstory-hero-title { font-size: 34px; }
+  .ourstory-ornament { width: 110px; height: 44px; }
+}
+
+@media (max-width: 576px) {
+  .ourstory-hero-title { font-size: 24px; }
+  .ourstory-hero-sub { font-size: 0.95rem; }
+}
+
+.ourstory-section2 {
+  position: relative;
+  background: radial-gradient(ellipse at 15% 80%, rgba(3,17,24,0.7), rgba(3,17,24,0.1)), #07151a;
+  color: $white;
+  padding: 4.5rem 0 5rem 0;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    left: -140px;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, rgba(7,21,26,0) 60%);
+    filter: blur(2px);
+    pointer-events: none;
+  }
+
+  .section2-title {
+    font-family: $font-cormorant;
+    font-size: 2.35rem;
+    font-weight: 700;
+    color: $white;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  .section2-description {
+    font-family: $font-lora;
+    color: #dfe6ed;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+  }
+
+  .section2-stats-row {
+    margin: 2.5rem 0;
+  }
+  .section2-stats {
+    gap: 1.8rem;
+    .section2-stat {
+      min-width: 140px;
+    }
+    .stat2-value {
+      font-family: $font-cormorant;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $accent-gold;
+      line-height: 1.1;
+    }
+    .stat2-label {
+      font-family: $font-lora;
+      font-size: 0.95rem;
+      color: #e6e6e6;
+      margin-top: 0.25rem;
+    }
+  }
+  .section2-divider {
+    width: 1px;
+    height: 58px;
+    background: rgba(255,255,255,0.18);
+    margin: 0 1rem;
+  }
+
+  .section2-image-main {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.25);
+    object-fit: cover;
+  }
+
+  .section2-image-side {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 6px 28px rgba(0,0,0,0.25);
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .ourstory-section2 { 
+    padding: 3rem 0 3rem 0;
+    .section2-title {
+      font-size: 1.6rem;
+    }
+    .section2-description {
+      font-size: 1rem;
+    }
+    .section2-divider {
+      display: none;
+    }
+    .section2-stats {
+      gap: 1.25rem;
+    }
+    .section2-image-main { max-width: 320px; }
+    .section2-image-side { max-width: 260px; }
+  }
+}
+
+@media (max-width: 576px) {
+  .ourstory-section2 { 
+    padding: 2rem 0 2.5rem 0;
+    .section2-title {
+      font-size: 1.25rem;
+    }
+    .section2-description {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .section2-stats {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .section2-image-main { max-width: 100%; }
+    .section2-image-side { max-width: 100%; }
+  }
+}
+
+.ourstory-section3 {
+  background: $white;
+  padding: 4.5rem 0 3rem 0;
+  color: #222;
+
+  .section3-title {
+    font-family: $font-cormorant;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.07;
+    color: #222;
+    margin-bottom: 1.2rem;
+  }
+
+  .section3-desc {
+    font-family: $font-lora;
+    color: #444;
+    font-size: 1.08rem;
+    line-height: 1.7;
+  }
+
+  .chef-card {
+    background: $white;
+    border-radius: 14px;
+    box-shadow: 0 2px 18px rgba(32,42,55,0.06);
+    padding: 1.8rem 1.2rem 1.25rem 1.2rem;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    min-height: 100%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+      box-shadow: 0 4px 24px rgba(100,125,147,0.18);
+    }
+  }
+  .chef-img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(39, 40, 44, 0.07);
+    background: #f6f6f8;
+  }
+  .chef-name {
+    font-family: $font-cormorant;
+    font-weight: 700;
+    font-size: 1.12rem;
+    color: #222;
+    margin-bottom: 0.18rem;
+  }
+  .chef-title {
+    font-family: $font-lora;
+    font-size: 0.95rem;
+    color: #a59f6b;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+  }
+  .chef-desc {
+    font-family: $font-lora;
+    font-size: 0.93rem;
+    color: #66676d;
+    margin-bottom: 0.7rem;
+    min-height: 58px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .section3-viewall-btn {
+    background: $accent-gold;
+    color: #222;
+    border-radius: 28px;
+    font-family: $font-lora;
+    font-weight: 600;
+    padding: 0.49rem 2.1rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 2px 8px rgba(244, 199, 63, 0.12);
+    transition: background 0.18s, transform 0.15s;
+    &:hover {
+      background: darken($accent-gold, 8%);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .ourstory-section3 {
+    padding: 3rem 0 2rem 0;
+    .chef-card { padding: 1.2rem 0.7rem 1rem 0.7rem; }
+    .section3-title { font-size: 1.4rem; }
+    .chef-img { width: 85px; height: 98px; }
+    .chef-desc { font-size: 0.87rem; min-height: 39px; }
+  }
+}
+@media (max-width: 576px) {
+  .ourstory-section3 {
+    padding: 1.5rem 0 0.7rem 0;
+    .section3-title { font-size: 1.12rem; }
+    .section3-desc { font-size: 0.93rem; }
+    .chef-img { width: 66px; height: 70px; }
+    .chef-card { padding: 0.7rem 0.2rem; }
+    .chef-desc { font-size: 0.78rem; min-height: 24px; margin-bottom: 0.3rem; text-align: center; }
+    .section3-viewall-btn { font-size: 0.97rem; padding: 0.43rem 1.5rem; }
+  }
+}
+
+.ourstory-section4-outer {
+  background: #faf9f7;
+  padding-bottom: 3rem;
+  padding-top: 2.2rem;
+}
+.cta-card {
+  background: $white !important;
+  box-shadow: 0 2px 24px 0 rgba(33,33,44,0.07);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+.cta-title {
+  font-family: $font-cormorant;
+  font-size: 2.25rem;
+  color: #222;
+  font-weight: 500;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+}
+.cta-desc {
+  font-family: $font-lora;
+  color: #383838;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  line-height: 1.65;
+}
+.cta-btn-yellow {
+  background: $accent-gold;
+  color: #222;
+  font-family: $font-lora;
+  font-size: 1.12rem;
+  border: none;
+  transition: all .16s;
+  box-shadow: 0 3px 14px rgba(244,199,63,0.11);
+  &:hover,
+  &:focus {
+    background: darken($accent-gold,9%);
+    color: #2e2e2e;
+    transform: translateY(-2px);
+  }
+}
+.cta-img {
+  max-width: 360px;
+  width: 100%;
+  border-radius: 23px !important;
+  box-shadow: 0 3px 24px 0 rgba(88,49,18,0.09);
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .cta-card { flex-direction: column !important; text-align: center; padding: 1.6rem !important; }
+  .cta-title { font-size: 1.33rem; }
+  .cta-img { max-width: 260px; margin-top: 1.4rem; }
+}
+@media (max-width: 576px) {
+  .cta-title { font-size: 1.07rem; }
+  .cta-desc { font-size: 0.96rem; }
+  .cta-img { max-width: 90vw; }
+}

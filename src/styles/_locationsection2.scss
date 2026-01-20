@@ -1,0 +1,262 @@
+@import 'variables';
+
+// Location Section 2 - Contact Form & Info
+.location-section2 {
+  background: $white;
+  padding: 4rem 0;
+  min-height: auto;
+}
+
+.location-form-wrapper {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.location-contact-title {
+  font-family: $font-cormorant;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+.location-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.location-contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-family: $font-lora;
+    font-size: 13px;
+    font-weight: 500;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+.location-contact-form .form-control {
+  font-family: $font-lora;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: $white;
+  color: #222;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-gold;
+    box-shadow: 0 0 0 2px rgba(244, 199, 63, 0.1);
+  }
+}
+
+.location-contact-form textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.phone-input-wrapper {
+  display: flex;
+  gap: 0.5rem;
+
+  .country-code-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: $white;
+    font-family: $font-lora;
+    font-size: 13px;
+    white-space: nowrap;
+    min-width: 70px;
+
+    .country-flag {
+      width: 24px;
+      height: 16px;
+      object-fit: cover;
+      border-radius: 2px;
+      display: block;
+    }
+
+    .country-text {
+      color: #333;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+
+  .form-control {
+    flex: 1;
+  }
+}
+
+.form-disclaimer {
+  font-family: $font-lora;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+
+  a {
+    color: $accent-gold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.btn-send-message {
+  background: $accent-gold;
+  color: $text-dark;
+  font-family: $font-lora;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 2rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: darken($accent-gold, 5%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.location-info-title {
+  font-family: $font-cormorant;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.location-info-subtitle {
+  font-family: $font-lora;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.location-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item-label {
+  font-family: $font-cormorant;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.info-item-text {
+  font-family: $font-lora;
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.location-map-wrapper {
+  margin-top: 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.location-map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .location-section2 {
+    padding: 3rem 0;
+  }
+
+  .location-info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .location-info-title {
+    font-size: 2rem;
+  }
+
+  .location-map-wrapper {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .location-section2 {
+    padding: 2rem 0;
+  }
+
+  .location-form-wrapper {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .location-contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .location-info-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .location-info-subtitle {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .location-info-grid {
+    gap: 1rem;
+  }
+
+  .info-item-label {
+    font-size: 1rem;
+  }
+
+  .info-item-text {
+    font-size: 13px;
+  }
+
+  .location-map-wrapper {
+    margin-top: 2rem;
+  }
+}
