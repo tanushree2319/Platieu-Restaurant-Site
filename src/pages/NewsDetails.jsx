@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import detailsBg from '../assets/NewsDetails/Background-Image.png';
+import detailsBg from '../assets/NewsDetails/Background.png';
 import newsDetailsImg1 from '../assets/NewsDetails/NewsDetailsImg1.png';
 import newsDetailsImg2 from '../assets/NewsDetails/NewsDetailsImg2.png';
 import newsDetailsImg3 from '../assets/NewsDetails/NewsDetailsImg3.png';

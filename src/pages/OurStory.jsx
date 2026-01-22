@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ourStoryBg from '../assets/AboutUs/Background.png';
+import ourStoryBg from '../assets/AboutUs/Background.jpg';
 import OurStorySection2 from '../components/OurStorySection2';
 import OurStorySection3 from '../components/OurStorySection3';
 import OurStorySection4 from '../components/OurStorySection4';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import reserveBg from '../assets/TableReservation/Background.png';
+import reserveBg from '../assets/TableReservation/Background.jpg';
 import ReserveSection2 from '../components/ReserveSection2';
 import Footer from '../components/Footer';
 

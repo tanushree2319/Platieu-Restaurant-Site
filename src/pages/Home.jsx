@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import heroImg from '../assets/Home/Background.png';
+import heroImg from '../assets/Home/Background.jpg';
 import yellowDesign from '../assets/Home/YellowDesign.png';
 import section2Image1 from '../assets/Home/Section2-Image1.png';
 import section2Image2 from '../assets/Home/Section2-Image2.png';
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="row g-0 align-items-center">
             {/* Left Content */}
             <div className="col-lg-6 company-content">
-              <h2 className="company-title">Our Company</h2>
+              <h2 className="company-title">About Platieu</h2>
               <div className="company-text-wrapper">
                 <p className="company-description">Since its opening, the Restaurant has become a place where taste, quality, and dining experience unite in harmony. We are here with a passion for serving delicious food made from the finest fresh ingredients, combined with a touch of love and creativity from our kitchen.</p>
                 <p className="company-description">We believe that food is not just a means to fill the stomach, but a part of the story, happiness, and togetherness. That's why every dish at the Restaurant is prepared with great care, to create special moments for you and your loved ones.</p>

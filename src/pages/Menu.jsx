@@ -1,5 +1,5 @@
 import React from 'react';
-import menuBg from '../assets/Menu/background.js';
+import menuBg from '../assets/Menu/Background.jpg';
 import MenuSection2 from '../components/MenuSection2';
 import MenuSection3 from '../components/MenuSection3';
 import MenuSection4 from '../components/MenuSection4';

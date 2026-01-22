@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import newsBg from '../assets/News/BackgroundImage.png';
+import newsBg from '../assets/News/Background.jpg';
 import April17 from '../assets/News/April17.png';
 import April18 from '../assets/News/April18.png';
 import April22 from '../assets/News/April22.png';

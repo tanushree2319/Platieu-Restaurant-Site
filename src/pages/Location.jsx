@@ -1,5 +1,5 @@
 import React from 'react';
-import locationBg from '../assets/ContactUs/BackgroundImage.png';
+import locationBg from '../assets/ContactUs/Background.jpg';
 import LocationSection2 from '../components/LocationSection2';
 import LocationSection3 from '../components/LocationSection3';
 import LocationSection4 from '../components/LocationSection4';
