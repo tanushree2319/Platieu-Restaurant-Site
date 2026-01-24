@@ -9,14 +9,14 @@ import decorRight from '../assets/Home/Section3-Image2.png';
 import garlicCheeseBread from '../assets/Home/GarlicCheeseBread.png';
 import stuffedMushrooms from '../assets/Home/StuffedMushrooms.png';
 import bruschettaAlPomodoro from '../assets/Home/BruschettaAlPomodoro.png';
-import chickenWingsBBQ from '../assets/Home/ChickenWingsBBQ.png';
+import ConfitDeCanard from '../assets/Home/ConfitDeCanard.jpg';
 import creamyPumpkinSoup from '../assets/Home/CreamyPumpkinSoup.png';
 import crispyCaesarSalad from '../assets/Home/CrispyCaesarSalad.png';
 import section4Img1 from '../assets/Home/Section4-Image1.png';
 import section4Img2 from '../assets/Home/Section4-Image2.png';
 import section4Img3 from '../assets/Home/Section4-Image3.png';
 import mapImage from '../assets/Home/Section5-Map.png';
-import countryFlag from '../assets/Home/section5Country.png';
+import countryFlag from '../assets/Home/FranceFlag.jpg';
 import section6Image1 from '../assets/Home/Section6-Image1.png';
 import section6Image2 from '../assets/Home/Section6-Image2.png';
 import section7Image1 from '../assets/Home/section7-image1.png';
@@ -139,10 +139,10 @@ export default function Home() {
                 <div className="menu-item-info">
                   <div className="menu-item-header">
                     <h3 className="menu-item-name">Garlic Cheese Bread</h3>
-                    <span className="menu-item-price">$7</span>
+                    <span className="menu-item-price">€7</span>
                   </div>
                   <p className="menu-item-category">Appetizer</p>
-                  <p className="menu-item-description">Toasted baguette with a blend of mozzarella cheese and garlic butter. Lorem ipsum dolor sit amet slur hehe wadaw mantap</p>
+                  <p className="menu-item-description">Toasted baguette with a blend of mozzarella cheese and garlic butter.</p>
                 </div>
               </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="menu-item-info">
                   <div className="menu-item-header">
                     <h3 className="menu-item-name">Stuffed Mushrooms</h3>
-                    <span className="menu-item-price">$5</span>
+                    <span className="menu-item-price">€5</span>
                   </div>
                   <p className="menu-item-category">Main Course</p>
                   <p className="menu-item-description">Oven-roasted mushrooms filled with melted cheese, sautéed onions, and a hint of herbs. A perfect balance of creamy and earthy flavors.</p>
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className="menu-item-info">
                   <div className="menu-item-header">
                     <h3 className="menu-item-name">Bruschetta al Pomodoro</h3>
-                    <span className="menu-item-price">$8</span>
+                    <span className="menu-item-price">€8</span>
                   </div>
                   <p className="menu-item-category">Appetizer</p>
                   <p className="menu-item-description">Freshly toasted bread topped with ripe tomatoes, garlic, olive oil, and basil leaves. A classic Italian appetizer full of vibrant taste.</p>
@@ -177,14 +177,14 @@ export default function Home() {
             <div className="menu-column">
               {/* Item 4 */}
               <div className="menu-item">
-                <img src={chickenWingsBBQ} alt="Chicken Wings BBQ" className="menu-item-image" />
+                <img src={ConfitDeCanard} alt="Confit De Canard" className="menu-item-image" />
                 <div className="menu-item-info">
                   <div className="menu-item-header">
-                    <h3 className="menu-item-name">Chicken Wings BBQ</h3>
-                    <span className="menu-item-price">$11</span>
+                    <h3 className="menu-item-name">Confit De Canard</h3>
+                    <span className="menu-item-price">€11</span>
                   </div>
                   <p className="menu-item-category">Main Course</p>
-                  <p className="menu-item-description">Grilled chicken wings coated in a smoky barbecue glaze with sesame seeds. Juicy, tender, and packed with bold flavor in every bite.</p>
+                  <p className="menu-item-description">A French classic of tender, salt-cured duck leg confit. Served with roasted fingerling potatoes, seasonal root vegetables, and a delicate herb-infused jus.</p>
                 </div>
               </div>
 
@@ -194,7 +194,7 @@ export default function Home() {
                 <div className="menu-item-info">
                   <div className="menu-item-header">
                     <h3 className="menu-item-name">Creamy Pumpkin Soup</h3>
-                    <span className="menu-item-price">$9</span>
+                    <span className="menu-item-price">€9</span>
                   </div>
                   <p className="menu-item-category">Appetizer</p>
                   <p className="menu-item-description">A smooth and velvety pumpkin soup made with fresh cream, seasonal spices, and topped with crispy croutons for extra texture.</p>
@@ -207,7 +207,7 @@ export default function Home() {
                 <div className="menu-item-info">
                   <div className="menu-item-header">
                     <h3 className="menu-item-name">Crispy Caesar Salad</h3>
-                    <span className="menu-item-price">$6</span>
+                    <span className="menu-item-price">€6</span>
                   </div>
                   <p className="menu-item-category">Appetizer</p>
                   <p className="menu-item-description">Crisp romaine lettuce tossed with garlic croutons, parmesan shavings, and our signature Caesar dressing made in-house.</p>
@@ -284,9 +284,9 @@ export default function Home() {
                     <div className="phone-input-wrapper">
                       <div className="country-code-display">
                         <img src={countryFlag} alt="Country Flag" className="country-flag" />
-                        <span className="country-text">+1</span>
+                        <span className="country-text">+33</span>
                       </div>
-                      <input type="tel" placeholder="+1 234 567 890" className="form-control" />
+                      <input type="tel" placeholder="+33 1 42 34 56 78" className="form-control" />
                     </div>
                   </div>
 

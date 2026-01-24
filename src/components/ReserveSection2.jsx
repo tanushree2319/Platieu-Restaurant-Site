@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import countryFlag from '../assets/Home/section5Country.png';
+import countryFlag from '../assets/Home/FranceFlag.jpg';
 
 export default function ReserveSection2() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
-    phoneCode: '+1',
+    phoneCode: '+33',
     phoneNumber: '',
     reservationDate: '',
     reservationTime: '',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import mapImage from '../assets/ContactUs/MapImage.png';
-import countryFlag from '../assets/Home/section5Country.png';
+import countryFlag from '../assets/Home/FranceFlag.jpg';
 
 export default function LocationSection2() {
   return (
@@ -23,9 +23,9 @@ export default function LocationSection2() {
                   <div className="phone-input-wrapper">
                     <div className="country-code-display">
                       <img src={countryFlag} alt="Country Flag" className="country-flag" />
-                      <span className="country-text">+1</span>
+                      <span className="country-text">+33</span>
                     </div>
-                    <input type="tel" placeholder="+1 234 567 890" className="form-control" />
+                    <input type="tel" placeholder="+33 1 42 34 56 78" className="form-control" />
                   </div>
                 </div>
 
